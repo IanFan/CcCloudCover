@@ -131,8 +131,20 @@
 		18968A2B16EC916700C7634B /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 18968A2A16EC916700C7634B /* vec4.c */; };
 		18968A3016EC916700C7634B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18968A2F16EC916700C7634B /* main.m */; };
 		18968A3316EC916700C7634B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18968A3216EC916700C7634B /* AppDelegate.m */; };
-		18968A3616EC916700C7634B /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18968A3516EC916700C7634B /* HelloWorldLayer.m */; };
 		18968A3916EC916700C7634B /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18968A3816EC916700C7634B /* IntroLayer.m */; };
+		18C14AA916EC960100492A45 /* CloudCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C14AA816EC960100492A45 /* CloudCover.m */; };
+		18C14AB416EC960900492A45 /* cloudCover_sim_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AAA16EC960900492A45 /* cloudCover_sim_bg.png */; };
+		18C14AB516EC960900492A45 /* cloudCover_sim_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AAB16EC960900492A45 /* cloudCover_sim_circle.png */; };
+		18C14AB616EC960900492A45 /* cloudCover_sim_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AAC16EC960900492A45 /* cloudCover_sim_3.png */; };
+		18C14AB716EC960900492A45 /* cloudCover_sim_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AAD16EC960900492A45 /* cloudCover_sim_4.png */; };
+		18C14AB816EC960900492A45 /* cloudCover_sim_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AAE16EC960900492A45 /* cloudCover_sim_5.png */; };
+		18C14AB916EC960900492A45 /* cloudCover_sim_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AAF16EC960900492A45 /* cloudCover_sim_6.png */; };
+		18C14ABA16EC960900492A45 /* cloudCover_sim_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AB016EC960900492A45 /* cloudCover_sim_7.png */; };
+		18C14ABB16EC960900492A45 /* cloudCover_sim_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AB116EC960900492A45 /* cloudCover_sim_8.png */; };
+		18C14ABC16EC960900492A45 /* cloudCover_sim_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AB216EC960900492A45 /* cloudCover_sim_1.png */; };
+		18C14ABD16EC960900492A45 /* cloudCover_sim_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AB316EC960900492A45 /* cloudCover_sim_2.png */; };
+		18C14AC016EC963E00492A45 /* CloudCoverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C14ABF16EC963E00492A45 /* CloudCoverLayer.m */; };
+		18C14AC216EC972100492A45 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AC116EC972100492A45 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -394,10 +406,23 @@
 		18968A2F16EC916700C7634B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18968A3116EC916700C7634B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18968A3216EC916700C7634B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18968A3416EC916700C7634B /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		18968A3516EC916700C7634B /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		18968A3716EC916700C7634B /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		18968A3816EC916700C7634B /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		18C14AA716EC960100492A45 /* CloudCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudCover.h; sourceTree = "<group>"; };
+		18C14AA816EC960100492A45 /* CloudCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudCover.m; sourceTree = "<group>"; };
+		18C14AAA16EC960900492A45 /* cloudCover_sim_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_bg.png; sourceTree = "<group>"; };
+		18C14AAB16EC960900492A45 /* cloudCover_sim_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_circle.png; sourceTree = "<group>"; };
+		18C14AAC16EC960900492A45 /* cloudCover_sim_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_3.png; sourceTree = "<group>"; };
+		18C14AAD16EC960900492A45 /* cloudCover_sim_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_4.png; sourceTree = "<group>"; };
+		18C14AAE16EC960900492A45 /* cloudCover_sim_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_5.png; sourceTree = "<group>"; };
+		18C14AAF16EC960900492A45 /* cloudCover_sim_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_6.png; sourceTree = "<group>"; };
+		18C14AB016EC960900492A45 /* cloudCover_sim_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_7.png; sourceTree = "<group>"; };
+		18C14AB116EC960900492A45 /* cloudCover_sim_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_8.png; sourceTree = "<group>"; };
+		18C14AB216EC960900492A45 /* cloudCover_sim_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_1.png; sourceTree = "<group>"; };
+		18C14AB316EC960900492A45 /* cloudCover_sim_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_sim_2.png; sourceTree = "<group>"; };
+		18C14ABE16EC963E00492A45 /* CloudCoverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudCoverLayer.h; sourceTree = "<group>"; };
+		18C14ABF16EC963E00492A45 /* CloudCoverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudCoverLayer.m; sourceTree = "<group>"; };
+		18C14AC116EC972100492A45 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +448,7 @@
 		1896889B16EC916000C7634B = {
 			isa = PBXGroup;
 			children = (
+				18C14AC116EC972100492A45 /* Default-568h@2x.png */,
 				189688B916EC916000C7634B /* CcCloudCover */,
 				189688A616EC916000C7634B /* Frameworks */,
 				189688A516EC916000C7634B /* Products */,
@@ -458,10 +484,22 @@
 			children = (
 				18968A3116EC916700C7634B /* AppDelegate.h */,
 				18968A3216EC916700C7634B /* AppDelegate.m */,
-				18968A3416EC916700C7634B /* HelloWorldLayer.h */,
-				18968A3516EC916700C7634B /* HelloWorldLayer.m */,
 				18968A3716EC916700C7634B /* IntroLayer.h */,
 				18968A3816EC916700C7634B /* IntroLayer.m */,
+				18C14ABE16EC963E00492A45 /* CloudCoverLayer.h */,
+				18C14ABF16EC963E00492A45 /* CloudCoverLayer.m */,
+				18C14AA716EC960100492A45 /* CloudCover.h */,
+				18C14AA816EC960100492A45 /* CloudCover.m */,
+				18C14AAA16EC960900492A45 /* cloudCover_sim_bg.png */,
+				18C14AAB16EC960900492A45 /* cloudCover_sim_circle.png */,
+				18C14AAC16EC960900492A45 /* cloudCover_sim_3.png */,
+				18C14AAD16EC960900492A45 /* cloudCover_sim_4.png */,
+				18C14AAE16EC960900492A45 /* cloudCover_sim_5.png */,
+				18C14AAF16EC960900492A45 /* cloudCover_sim_6.png */,
+				18C14AB016EC960900492A45 /* cloudCover_sim_7.png */,
+				18C14AB116EC960900492A45 /* cloudCover_sim_8.png */,
+				18C14AB216EC960900492A45 /* cloudCover_sim_1.png */,
+				18C14AB316EC960900492A45 /* cloudCover_sim_2.png */,
 				189688BA16EC916000C7634B /* Resources */,
 				189688D416EC916100C7634B /* libs */,
 				18968A2D16EC916700C7634B /* Supporting Files */,
@@ -895,6 +933,17 @@
 				189688D016EC916100C7634B /* Icon@2x.png in Resources */,
 				189688D316EC916100C7634B /* iTunesArtwork in Resources */,
 				18968A1116EC916600C7634B /* ChangeLog in Resources */,
+				18C14AB416EC960900492A45 /* cloudCover_sim_bg.png in Resources */,
+				18C14AB516EC960900492A45 /* cloudCover_sim_circle.png in Resources */,
+				18C14AB616EC960900492A45 /* cloudCover_sim_3.png in Resources */,
+				18C14AB716EC960900492A45 /* cloudCover_sim_4.png in Resources */,
+				18C14AB816EC960900492A45 /* cloudCover_sim_5.png in Resources */,
+				18C14AB916EC960900492A45 /* cloudCover_sim_6.png in Resources */,
+				18C14ABA16EC960900492A45 /* cloudCover_sim_7.png in Resources */,
+				18C14ABB16EC960900492A45 /* cloudCover_sim_8.png in Resources */,
+				18C14ABC16EC960900492A45 /* cloudCover_sim_1.png in Resources */,
+				18C14ABD16EC960900492A45 /* cloudCover_sim_2.png in Resources */,
+				18C14AC216EC972100492A45 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,8 +1056,9 @@
 				18968A2B16EC916700C7634B /* vec4.c in Sources */,
 				18968A3016EC916700C7634B /* main.m in Sources */,
 				18968A3316EC916700C7634B /* AppDelegate.m in Sources */,
-				18968A3616EC916700C7634B /* HelloWorldLayer.m in Sources */,
 				18968A3916EC916700C7634B /* IntroLayer.m in Sources */,
+				18C14AA916EC960100492A45 /* CloudCover.m in Sources */,
+				18C14AC016EC963E00492A45 /* CloudCoverLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,6 +1162,7 @@
 				18968A3E16EC916700C7634B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
