@@ -8,55 +8,91 @@
 
 #import "CloudCover.h"
 
+#define CLOUDCOVER_OKTA_FADE_TIME 0.0
+
 @implementation CloudCover
-@synthesize currentCloudAmount=_currentCloudAmount;
+@synthesize currentCloudAmount=_currentCloudAmount,cloudCoverStyle = _cloudCoverStyle, position=_position, length=_length;
 
 #pragma mark - Control
 
--(void)setChangeWithEditAmount:(int)editAmount {
+-(void)changeOktaWithEditAmount:(int)editAmount {
   _currentCloudAmount += editAmount;
   
-  if (_currentCloudAmount >=8) {
-    _currentCloudAmount = 8;
-  }else if (_currentCloudAmount <=0){
-    _currentCloudAmount = 0;
-    
-    //delegate Zero
+  //amount max is 8, min is 0
+  if (_currentCloudAmount >=8) _currentCloudAmount = 8;
+  else if (_currentCloudAmount <=0) _currentCloudAmount = 0;
+  
+  NSLog(@"_currentCloudAmount =%d",_currentCloudAmount);
+  
+  //delegate amount changed
+  if ([self.cloudCoverDelegate respondsToSelector:@selector(cloudCoverDelegateAmountChangedWithCloudCover:)] == YES) {
+    [self.cloudCoverDelegate cloudCoverDelegateAmountChangedWithCloudCover:self];
   }
   
-  for (int i=0; i<[_oktaArray count]; i++) {
-    CCSprite *targetSprite = [_oktaArray objectAtIndex:i];
+  [self changeOktaWithIsObservable:_isObservable];
+}
+
+-(void)changeOktaWithIsObservable:(BOOL)isObservable {
+  _isObservable = isObservable;
+  
+  if (isObservable == YES) {
+    //hide unkownSimbol
+    [[_oktaArray objectAtIndex:9] runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:0]];
     
-    if (i <= _currentCloudAmount) {
-      if (targetSprite.opacity != 255) {
-        [targetSprite runAction:[CCFadeTo actionWithDuration:0.35 opacity:255]];
-      }
+    //show oktas
+    switch (_cloudCoverStyle) {
+      case CloudCoverStyle_Simple: {
+        for (int i=0; i<=8; i++) {
+          CCSprite *targetSprite = [_oktaArray objectAtIndex:i];
+          if (i <= _currentCloudAmount) [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:255]];
+          else [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:0]];
+        }
+      } break;
+        
+      case CloudCoverStyle_Meteorology: {
+        for (int i=0; i<=8; i++) {
+          CCSprite *targetSprite = [_oktaArray objectAtIndex:i];
+          if (i == _currentCloudAmount) [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:255]];
+          else [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:0]];
+        }
+      } break;
+        
+      default: break;
     }
-    else if (targetSprite.opacity != 0){
-      [targetSprite runAction:[CCFadeTo actionWithDuration:0.35 opacity:0]];
-    }
+  }
+  
+  else {
+    //show unkownsimbol
+    [[_oktaArray objectAtIndex:9] runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:255]];
     
+    //hide oktas
+    for (int i=0; i<=8; i++) {
+      CCSprite *targetSprite = [_oktaArray objectAtIndex:i];
+      [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:0]];
+    }
   }
   
 }
 
--(void)setIsObservable:(BOOL)isObservable {
-  
-}
-
--(void)setCloudCoverStyle:(CloudCoverStyle)style {
-  
+-(void)changeStyleWithCloudCoverStyle:(CloudCoverStyle)style {
+  if (_cloudCoverStyle != style) {
+    _cloudCoverStyle = style;
+    [self setupOktaArray];
+  }
 }
 
 #pragma mark - Init
 
--(void)setupCloudCoverWithParentLayer:(CCLayer *)parentL position:(CGPoint)position sizeLength:(float)sizeLength style:(CloudCoverStyle)style cloudAmount:(int)cloudAmount {
-  _parentLayer = parentL;
-  _currentCloudAmount = cloudAmount;
-
-  _oktaArray = [[NSMutableArray alloc]init];
+-(void)setupOktaArray {
+  if (_oktaArray == nil) _oktaArray = [[NSMutableArray alloc]init];
+  else {
+    for (CCSprite *targetSprite in _oktaArray) [_parentLayer removeChild:targetSprite cleanup:YES];
+    [_oktaArray removeAllObjects];
+  }
   
-  NSString *s0;
+  CCSprite *scaleSprite = [CCSprite spriteWithFile:@"cloudCover_bg.png"];
+  float scale = _length/scaleSprite.boundingBox.size.width;
+  
   NSString *s1;
   NSString *s2;
   NSString *s3;
@@ -65,83 +101,66 @@
   NSString *s6;
   NSString *s7;
   NSString *s8;
-  NSString *s9;
   
-  if (style == CloudCoverStyle_Simple) {
-    s0 = @"cloudCover_sim_bg.png";
-    s1 = @"cloudCover_sim_1.png";
-    s2 = @"cloudCover_sim_2.png";
-    s3 = @"cloudCover_sim_3.png";
-    s4 = @"cloudCover_sim_4.png";
-    s5 = @"cloudCover_sim_5.png";
-    s6 = @"cloudCover_sim_6.png";
-    s7 = @"cloudCover_sim_7.png";
-    s8 = @"cloudCover_sim_8.png";
-    s9 = @"cloudCover_sim_circle.png";
+  switch (_cloudCoverStyle) {
+    case CloudCoverStyle_Simple: {
+      s1 = @"cloudCover_sim_1.png";
+      s2 = @"cloudCover_sim_2.png";
+      s3 = @"cloudCover_sim_3.png";
+      s4 = @"cloudCover_sim_4.png";
+      s5 = @"cloudCover_sim_5.png";
+      s6 = @"cloudCover_sim_6.png";
+      s7 = @"cloudCover_sim_7.png";
+      s8 = @"cloudCover_sim_8.png";
+    }break;
+      
+    case CloudCoverStyle_Meteorology: {
+      s1 = @"cloudCover_meteor_1.png";
+      s2 = @"cloudCover_meteor_2.png";
+      s3 = @"cloudCover_meteor_3.png";
+      s4 = @"cloudCover_meteor_4.png";
+      s5 = @"cloudCover_meteor_5.png";
+      s6 = @"cloudCover_meteor_6.png";
+      s7 = @"cloudCover_meteor_7.png";
+      s8 = @"cloudCover_meteor_8.png";
+    }break;
+      
+    default: break;
   }
   
-  CCSprite *simple0 = [CCSprite spriteWithFile:s0];
-  float scale = sizeLength/simple0.boundingBox.size.width;
-  simple0.scale = scale;
-  simple0.position = position;
-  [_oktaArray addObject:simple0];
-  [_parentLayer addChild:simple0];
+  [self setupOktaWithPngName:@"cloudCover_bg.png" scale:scale position:_position opacity:255];
+  [self setupOktaWithPngName:s1 scale:scale position:_position opacity:0];
+  [self setupOktaWithPngName:s2 scale:scale position:_position opacity:0];
+  [self setupOktaWithPngName:s3 scale:scale position:_position opacity:0];
+  [self setupOktaWithPngName:s4 scale:scale position:_position opacity:0];
+  [self setupOktaWithPngName:s5 scale:scale position:_position opacity:0];
+  [self setupOktaWithPngName:s6 scale:scale position:_position opacity:0];
+  [self setupOktaWithPngName:s7 scale:scale position:_position opacity:0];
+  [self setupOktaWithPngName:s8 scale:scale position:_position opacity:0];
+  [self setupOktaWithPngName:@"cloudCover_unknown.png" scale:scale position:_position opacity:0];
+  [self setupOktaWithPngName:@"cloudCover_circle.png" scale:scale position:_position opacity:255];
   
-  CCSprite *simple1 = [CCSprite spriteWithFile:s1];
-  simple1.scale = scale;
-  simple1.position = position;
-  [_oktaArray addObject:simple1];
-  [_parentLayer addChild:simple1];
-  
-  CCSprite *simple2 = [CCSprite spriteWithFile:s2];
-  simple2.scale = scale;
-  simple2.position = position;
-  [_oktaArray addObject:simple2];
-  [_parentLayer addChild:simple2];
-  
-  CCSprite *simple3 = [CCSprite spriteWithFile:s3];
-  simple3.scale = scale;
-  simple3.position = position;
-  [_oktaArray addObject:simple3];
-  [_parentLayer addChild:simple3];
-  
-  CCSprite *simple4 = [CCSprite spriteWithFile:s4];
-  simple4.scale = scale;
-  simple4.position = position;
-  [_oktaArray addObject:simple4];
-  [_parentLayer addChild:simple4];
-  
-  CCSprite *simple5 = [CCSprite spriteWithFile:s5];
-  simple5.scale = scale;
-  simple5.position = position;
-  [_oktaArray addObject:simple5];
-  [_parentLayer addChild:simple5];
-  
-  CCSprite *simple6 = [CCSprite spriteWithFile:s6];
-  simple6.scale = scale;
-  simple6.position = position;
-  [_oktaArray addObject:simple6];
-  [_parentLayer addChild:simple6];
-  
-  CCSprite *simple7 = [CCSprite spriteWithFile:s7];
-  simple7.scale = scale;
-  simple7.position = position;
-  [_oktaArray addObject:simple7];
-  [_parentLayer addChild:simple7];
-  
-  CCSprite *simple8 = [CCSprite spriteWithFile:s8];
-  simple8.scale = scale;
-  simple8.position = position;
-  [_oktaArray addObject:simple8];
-  [_parentLayer addChild:simple8];
-  
-  CCSprite *circle = [CCSprite spriteWithFile:s9];
-  circle.scale = scale;
-  circle.position = position;
-  [_parentLayer addChild:circle];
-  
-  
-  [self setChangeWithEditAmount:0];
+  [self changeOktaWithEditAmount:0];
+}
+
+-(void)setupOktaWithPngName:(NSString*)pngName scale:(float)scale position:(CGPoint)position opacity:(int)opacity {
+  CCSprite *sprite = [CCSprite spriteWithFile:pngName];
+  sprite.scale = scale;
+  sprite.position = position;
+  sprite.opacity = opacity;
+  [_oktaArray addObject:sprite];
+  [_parentLayer addChild:sprite];
+}
+
+-(void)setupCloudCoverWithParentLayer:(CCLayer *)parentL position:(CGPoint)position sizeLength:(float)sizeLength style:(CloudCoverStyle)style cloudAmount:(int)cloudAmount isObservable:(BOOL)isObservable {
+  _parentLayer = parentL;
+  _position = position;
+  _length = sizeLength;
+  _cloudCoverStyle = style;
+  _currentCloudAmount = cloudAmount;
+  _isObservable = isObservable;
+
+  [self setupOktaArray];
 }
 
 -(id) init {
@@ -152,6 +171,9 @@
 }
 
 - (void) dealloc {
+  for (CCSprite *sprite in _oktaArray) [_parentLayer removeChild:sprite cleanup:YES];
+  [_oktaArray release];
+  
 	[super dealloc];
 }
 

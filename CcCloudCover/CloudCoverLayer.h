@@ -13,6 +13,8 @@
 @interface CloudCoverLayer : CCLayer <CloudCoverDelegate>
 {
   CloudCover *_cloudCover;
+  
+  BOOL isDecreasing;
 }
 
 +(CCScene *) scene;

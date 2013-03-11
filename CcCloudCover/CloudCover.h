@@ -20,22 +20,27 @@ typedef enum {
 {
   CCLayer *_parentLayer;
   NSMutableArray *_oktaArray;
+  
+  BOOL _isObservable;
 }
 
 @property (nonatomic,assign) id <CloudCoverDelegate> cloudCoverDelegate;
+@property CGPoint position;
+@property float length;
+@property CloudCoverStyle cloudCoverStyle;
 @property int currentCloudAmount;
 
--(void)setupCloudCoverWithParentLayer:(CCLayer*)parentL position:(CGPoint)position sizeLength:(float)sizeLength style:(CloudCoverStyle)style cloudAmount:(int)cloudAmount;
+-(void)setupCloudCoverWithParentLayer:(CCLayer*)parentL position:(CGPoint)position sizeLength:(float)sizeLength style:(CloudCoverStyle)style cloudAmount:(int)cloudAmount isObservable:(BOOL)isObservable;
 
 //Control Methods
--(void)setIsObservable:(BOOL)isObservable;
--(void)setChangeWithEditAmount:(int)editAmount;
--(void)setCloudCoverStyle:(CloudCoverStyle)style;
+-(void)changeOktaWithIsObservable:(BOOL)isObservable;
+-(void)changeOktaWithEditAmount:(int)editAmount;
+-(void)changeStyleWithCloudCoverStyle:(CloudCoverStyle)style;
 
 @end
 
 @protocol CloudCoverDelegate <NSObject>
 @optional
 -(void)cloudCoverDelegateTappedWithCloudCover:(CloudCover*)cloudCover;
--(void)cloudCoverDelegateChangedWithCloudCover:(CloudCover*)cloudCover;
+-(void)cloudCoverDelegateAmountChangedWithCloudCover:(CloudCover*)cloudCover;
 @end

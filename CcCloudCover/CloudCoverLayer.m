@@ -24,16 +24,33 @@
 	return scene;
 }
 
--(void)changeCloudRandamly:(ccTime)dt {
-  int changeInt = arc4random()%2==0? +1:-1;
-  [_cloudCover setChangeWithEditAmount:changeInt];
+-(void)changeCloud:(ccTime)dt {
+  //increase okta from zero to 8, then decrease it from 8 to zero, repeatForever
+  int changeInt = (isDecreasing == NO)? +1:-1;
+  [_cloudCover changeOktaWithEditAmount:changeInt];
+  
+  if (_cloudCover.currentCloudAmount == 8) isDecreasing = YES;
+  else if (_cloudCover.currentCloudAmount == 0) isDecreasing = NO;
+  
+  //switch Style
+  if (_cloudCover.currentCloudAmount == 0) {
+    if (_cloudCover.cloudCoverStyle == CloudCoverStyle_Simple) {
+      [_cloudCover changeStyleWithCloudCoverStyle:CloudCoverStyle_Meteorology];
+    }else {
+      [_cloudCover changeStyleWithCloudCoverStyle:CloudCoverStyle_Simple];
+    }
+  }
+  
+  //switch observable randomly
+//  if (arc4random()%2 == 0) [_cloudCover changeOktaWithIsObservable:NO];
+//  else [_cloudCover changeOktaWithIsObservable:YES];
 }
 
 -(void)setupCloudCover {
   CGSize winSize = [CCDirector sharedDirector].winSize;
   
   _cloudCover = [[CloudCover alloc]init];
-  [_cloudCover setupCloudCoverWithParentLayer:self position:ccp(winSize.width/2, winSize.height/2) sizeLength:200 style:CloudCoverStyle_Simple cloudAmount:4];
+  [_cloudCover setupCloudCoverWithParentLayer:self position:ccp(winSize.width/2, winSize.height/2) sizeLength:(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)?200:150 style:CloudCoverStyle_Simple cloudAmount:0 isObservable:YES];
 }
 
 -(void)setBackgroundLayer {
@@ -46,7 +63,7 @@
     
     [self setupCloudCover];
     
-    [self schedule:@selector(changeCloudRandamly:) interval:0.5];
+    [self schedule:@selector(changeCloud:) interval:0.5];
   }
   
   return self;
