@@ -8,7 +8,7 @@
 
 #import "CloudCover.h"
 
-#define CLOUDCOVER_OKTA_FADE_TIME 0.0
+#define CLOUDCOVER_OKTA_FADE_TIME 0
 
 @implementation CloudCover
 @synthesize currentCloudAmount=_currentCloudAmount,cloudCoverStyle = _cloudCoverStyle, position=_position, length=_length;
@@ -40,24 +40,10 @@
     [[_oktaArray objectAtIndex:9] runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:0]];
     
     //show oktas
-    switch (_cloudCoverStyle) {
-      case CloudCoverStyle_Simple: {
-        for (int i=0; i<=8; i++) {
-          CCSprite *targetSprite = [_oktaArray objectAtIndex:i];
-          if (i <= _currentCloudAmount) [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:255]];
-          else [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:0]];
-        }
-      } break;
-        
-      case CloudCoverStyle_Meteorology: {
-        for (int i=0; i<=8; i++) {
-          CCSprite *targetSprite = [_oktaArray objectAtIndex:i];
-          if (i == _currentCloudAmount) [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:255]];
-          else [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:0]];
-        }
-      } break;
-        
-      default: break;
+    for (int i=0; i<=8; i++) {
+      CCSprite *targetSprite = [_oktaArray objectAtIndex:i];
+      if (i == _currentCloudAmount) [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:255]];
+      else [targetSprite runAction:[CCFadeTo actionWithDuration:CLOUDCOVER_OKTA_FADE_TIME opacity:0]];
     }
   }
   
@@ -93,52 +79,37 @@
   CCSprite *scaleSprite = [CCSprite spriteWithFile:@"cloudCover_bg.png"];
   float scale = _length/scaleSprite.boundingBox.size.width;
   
-  NSString *s1;
-  NSString *s2;
-  NSString *s3;
-  NSString *s4;
-  NSString *s5;
-  NSString *s6;
-  NSString *s7;
-  NSString *s8;
-  
   switch (_cloudCoverStyle) {
     case CloudCoverStyle_Simple: {
-      s1 = @"cloudCover_sim_1.png";
-      s2 = @"cloudCover_sim_2.png";
-      s3 = @"cloudCover_sim_3.png";
-      s4 = @"cloudCover_sim_4.png";
-      s5 = @"cloudCover_sim_5.png";
-      s6 = @"cloudCover_sim_6.png";
-      s7 = @"cloudCover_sim_7.png";
-      s8 = @"cloudCover_sim_8.png";
+      [self setupOktaWithPngName:@"cloudCover_bg.png" scale:scale position:_position opacity:255];
+      [self setupOktaWithPngName:@"cloudCover_simple_1.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_simple_2.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_simple_3.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_simple_4.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_simple_5.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_simple_6.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_simple_7.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_simple_8.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_unknown.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_circle.png" scale:scale position:_position opacity:255];
     }break;
       
     case CloudCoverStyle_Meteorology: {
-      s1 = @"cloudCover_meteor_1.png";
-      s2 = @"cloudCover_meteor_2.png";
-      s3 = @"cloudCover_meteor_3.png";
-      s4 = @"cloudCover_meteor_4.png";
-      s5 = @"cloudCover_meteor_5.png";
-      s6 = @"cloudCover_meteor_6.png";
-      s7 = @"cloudCover_meteor_7.png";
-      s8 = @"cloudCover_meteor_8.png";
+      [self setupOktaWithPngName:@"cloudCover_bg.png" scale:scale position:_position opacity:255];
+      [self setupOktaWithPngName:@"cloudCover_meteor_1.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_meteor_2.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_meteor_3.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_meteor_4.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_meteor_5.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_meteor_6.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_meteor_7.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_meteor_8.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_unknown.png" scale:scale position:_position opacity:0];
+      [self setupOktaWithPngName:@"cloudCover_circle.png" scale:scale position:_position opacity:255];
     }break;
       
     default: break;
   }
-  
-  [self setupOktaWithPngName:@"cloudCover_bg.png" scale:scale position:_position opacity:255];
-  [self setupOktaWithPngName:s1 scale:scale position:_position opacity:0];
-  [self setupOktaWithPngName:s2 scale:scale position:_position opacity:0];
-  [self setupOktaWithPngName:s3 scale:scale position:_position opacity:0];
-  [self setupOktaWithPngName:s4 scale:scale position:_position opacity:0];
-  [self setupOktaWithPngName:s5 scale:scale position:_position opacity:0];
-  [self setupOktaWithPngName:s6 scale:scale position:_position opacity:0];
-  [self setupOktaWithPngName:s7 scale:scale position:_position opacity:0];
-  [self setupOktaWithPngName:s8 scale:scale position:_position opacity:0];
-  [self setupOktaWithPngName:@"cloudCover_unknown.png" scale:scale position:_position opacity:0];
-  [self setupOktaWithPngName:@"cloudCover_circle.png" scale:scale position:_position opacity:255];
   
   [self changeOktaWithEditAmount:0];
 }
@@ -171,6 +142,7 @@
 }
 
 - (void) dealloc {
+  self.cloudCoverDelegate = nil;
   for (CCSprite *sprite in _oktaArray) [_parentLayer removeChild:sprite cleanup:YES];
   [_oktaArray release];
   

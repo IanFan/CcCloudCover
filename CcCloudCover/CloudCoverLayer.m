@@ -50,6 +50,7 @@
   CGSize winSize = [CCDirector sharedDirector].winSize;
   
   _cloudCover = [[CloudCover alloc]init];
+  _cloudCover.cloudCoverDelegate = self;
   [_cloudCover setupCloudCoverWithParentLayer:self position:ccp(winSize.width/2, winSize.height/2) sizeLength:(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)?200:150 style:CloudCoverStyle_Simple cloudAmount:0 isObservable:YES];
 }
 
