@@ -133,27 +133,46 @@
 		18968A3316EC916700C7634B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18968A3216EC916700C7634B /* AppDelegate.m */; };
 		18968A3916EC916700C7634B /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18968A3816EC916700C7634B /* IntroLayer.m */; };
 		18C14AA916EC960100492A45 /* CloudCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C14AA816EC960100492A45 /* CloudCover.m */; };
-		18C14AB416EC960900492A45 /* cloudCover_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AAA16EC960900492A45 /* cloudCover_bg.png */; };
-		18C14AB516EC960900492A45 /* cloudCover_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AAB16EC960900492A45 /* cloudCover_circle.png */; };
 		18C14AC016EC963E00492A45 /* CloudCoverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C14ABF16EC963E00492A45 /* CloudCoverLayer.m */; };
 		18C14AC216EC972100492A45 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C14AC116EC972100492A45 /* Default-568h@2x.png */; };
-		18D6A27D16ED7D3300B6755E /* cloudCover_unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D6A27C16ED7D3300B6755E /* cloudCover_unknown.png */; };
-		18D6A28616ED893900B6755E /* cloudCover_meteor_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D6A27E16ED893800B6755E /* cloudCover_meteor_1.png */; };
-		18D6A28716ED893900B6755E /* cloudCover_meteor_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D6A27F16ED893800B6755E /* cloudCover_meteor_2.png */; };
-		18D6A28816ED893900B6755E /* cloudCover_meteor_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D6A28016ED893800B6755E /* cloudCover_meteor_3.png */; };
-		18D6A28916ED893900B6755E /* cloudCover_meteor_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D6A28116ED893800B6755E /* cloudCover_meteor_4.png */; };
-		18D6A28A16ED893900B6755E /* cloudCover_meteor_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D6A28216ED893800B6755E /* cloudCover_meteor_5.png */; };
-		18D6A28B16ED893900B6755E /* cloudCover_meteor_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D6A28316ED893800B6755E /* cloudCover_meteor_6.png */; };
-		18D6A28C16ED893900B6755E /* cloudCover_meteor_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D6A28416ED893900B6755E /* cloudCover_meteor_7.png */; };
-		18D6A28D16ED893900B6755E /* cloudCover_meteor_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D6A28516ED893900B6755E /* cloudCover_meteor_8.png */; };
-		18F78D0716EDA98000471775 /* cloudCover_simple_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78CFF16EDA98000471775 /* cloudCover_simple_1.png */; };
-		18F78D0816EDA98000471775 /* cloudCover_simple_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D0016EDA98000471775 /* cloudCover_simple_2.png */; };
-		18F78D0916EDA98000471775 /* cloudCover_simple_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D0116EDA98000471775 /* cloudCover_simple_3.png */; };
-		18F78D0A16EDA98000471775 /* cloudCover_simple_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D0216EDA98000471775 /* cloudCover_simple_4.png */; };
-		18F78D0B16EDA98000471775 /* cloudCover_simple_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D0316EDA98000471775 /* cloudCover_simple_5.png */; };
-		18F78D0C16EDA98000471775 /* cloudCover_simple_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D0416EDA98000471775 /* cloudCover_simple_6.png */; };
-		18F78D0D16EDA98000471775 /* cloudCover_simple_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D0516EDA98000471775 /* cloudCover_simple_7.png */; };
-		18F78D0E16EDA98000471775 /* cloudCover_simple_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D0616EDA98000471775 /* cloudCover_simple_8.png */; };
+		18F61ACE171BD5D8006832E1 /* cloudCover_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AA8171BD5D7006832E1 /* cloudCover_bg.png */; };
+		18F61ACF171BD5D8006832E1 /* cloudCover_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AA9171BD5D7006832E1 /* cloudCover_bg@2x.png */; };
+		18F61AD0171BD5D8006832E1 /* cloudCover_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AAA171BD5D7006832E1 /* cloudCover_circle.png */; };
+		18F61AD1171BD5D8006832E1 /* cloudCover_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AAB171BD5D7006832E1 /* cloudCover_circle@2x.png */; };
+		18F61AD2171BD5D8006832E1 /* cloudCover_meteor_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AAC171BD5D7006832E1 /* cloudCover_meteor_1.png */; };
+		18F61AD3171BD5D8006832E1 /* cloudCover_meteor_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AAD171BD5D7006832E1 /* cloudCover_meteor_1@2x.png */; };
+		18F61AD4171BD5D8006832E1 /* cloudCover_meteor_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AAE171BD5D7006832E1 /* cloudCover_meteor_2.png */; };
+		18F61AD5171BD5D8006832E1 /* cloudCover_meteor_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AAF171BD5D7006832E1 /* cloudCover_meteor_2@2x.png */; };
+		18F61AD6171BD5D8006832E1 /* cloudCover_meteor_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB0171BD5D7006832E1 /* cloudCover_meteor_3.png */; };
+		18F61AD7171BD5D8006832E1 /* cloudCover_meteor_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB1171BD5D7006832E1 /* cloudCover_meteor_3@2x.png */; };
+		18F61AD8171BD5D8006832E1 /* cloudCover_meteor_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB2171BD5D7006832E1 /* cloudCover_meteor_4.png */; };
+		18F61AD9171BD5D8006832E1 /* cloudCover_meteor_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB3171BD5D7006832E1 /* cloudCover_meteor_4@2x.png */; };
+		18F61ADA171BD5D8006832E1 /* cloudCover_meteor_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB4171BD5D7006832E1 /* cloudCover_meteor_5.png */; };
+		18F61ADB171BD5D8006832E1 /* cloudCover_meteor_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB5171BD5D8006832E1 /* cloudCover_meteor_5@2x.png */; };
+		18F61ADC171BD5D8006832E1 /* cloudCover_meteor_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB6171BD5D8006832E1 /* cloudCover_meteor_6.png */; };
+		18F61ADD171BD5D8006832E1 /* cloudCover_meteor_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB7171BD5D8006832E1 /* cloudCover_meteor_6@2x.png */; };
+		18F61ADE171BD5D8006832E1 /* cloudCover_meteor_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB8171BD5D8006832E1 /* cloudCover_meteor_7.png */; };
+		18F61ADF171BD5D8006832E1 /* cloudCover_meteor_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AB9171BD5D8006832E1 /* cloudCover_meteor_7@2x.png */; };
+		18F61AE0171BD5D8006832E1 /* cloudCover_meteor_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ABA171BD5D8006832E1 /* cloudCover_meteor_8.png */; };
+		18F61AE1171BD5D8006832E1 /* cloudCover_meteor_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ABB171BD5D8006832E1 /* cloudCover_meteor_8@2x.png */; };
+		18F61AE2171BD5D8006832E1 /* cloudCover_simple_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ABC171BD5D8006832E1 /* cloudCover_simple_1.png */; };
+		18F61AE3171BD5D8006832E1 /* cloudCover_simple_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ABD171BD5D8006832E1 /* cloudCover_simple_1@2x.png */; };
+		18F61AE4171BD5D8006832E1 /* cloudCover_simple_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ABE171BD5D8006832E1 /* cloudCover_simple_2.png */; };
+		18F61AE5171BD5D8006832E1 /* cloudCover_simple_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ABF171BD5D8006832E1 /* cloudCover_simple_2@2x.png */; };
+		18F61AE6171BD5D8006832E1 /* cloudCover_simple_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC0171BD5D8006832E1 /* cloudCover_simple_3.png */; };
+		18F61AE7171BD5D8006832E1 /* cloudCover_simple_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC1171BD5D8006832E1 /* cloudCover_simple_3@2x.png */; };
+		18F61AE8171BD5D8006832E1 /* cloudCover_simple_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC2171BD5D8006832E1 /* cloudCover_simple_4.png */; };
+		18F61AE9171BD5D8006832E1 /* cloudCover_simple_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC3171BD5D8006832E1 /* cloudCover_simple_4@2x.png */; };
+		18F61AEA171BD5D8006832E1 /* cloudCover_simple_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC4171BD5D8006832E1 /* cloudCover_simple_5.png */; };
+		18F61AEB171BD5D8006832E1 /* cloudCover_simple_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC5171BD5D8006832E1 /* cloudCover_simple_5@2x.png */; };
+		18F61AEC171BD5D8006832E1 /* cloudCover_simple_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC6171BD5D8006832E1 /* cloudCover_simple_6.png */; };
+		18F61AED171BD5D8006832E1 /* cloudCover_simple_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC7171BD5D8006832E1 /* cloudCover_simple_6@2x.png */; };
+		18F61AEE171BD5D8006832E1 /* cloudCover_simple_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC8171BD5D8006832E1 /* cloudCover_simple_7.png */; };
+		18F61AEF171BD5D8006832E1 /* cloudCover_simple_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61AC9171BD5D8006832E1 /* cloudCover_simple_7@2x.png */; };
+		18F61AF0171BD5D8006832E1 /* cloudCover_simple_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ACA171BD5D8006832E1 /* cloudCover_simple_8.png */; };
+		18F61AF1171BD5D8006832E1 /* cloudCover_simple_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ACB171BD5D8006832E1 /* cloudCover_simple_8@2x.png */; };
+		18F61AF2171BD5D8006832E1 /* cloudCover_unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ACC171BD5D8006832E1 /* cloudCover_unknown.png */; };
+		18F61AF3171BD5D8006832E1 /* cloudCover_unknown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F61ACD171BD5D8006832E1 /* cloudCover_unknown@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -419,28 +438,47 @@
 		18968A3816EC916700C7634B /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		18C14AA716EC960100492A45 /* CloudCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudCover.h; sourceTree = "<group>"; };
 		18C14AA816EC960100492A45 /* CloudCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudCover.m; sourceTree = "<group>"; };
-		18C14AAA16EC960900492A45 /* cloudCover_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_bg.png; sourceTree = "<group>"; };
-		18C14AAB16EC960900492A45 /* cloudCover_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_circle.png; sourceTree = "<group>"; };
 		18C14ABE16EC963E00492A45 /* CloudCoverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudCoverLayer.h; sourceTree = "<group>"; };
 		18C14ABF16EC963E00492A45 /* CloudCoverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudCoverLayer.m; sourceTree = "<group>"; };
 		18C14AC116EC972100492A45 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		18D6A27C16ED7D3300B6755E /* cloudCover_unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_unknown.png; sourceTree = "<group>"; };
-		18D6A27E16ED893800B6755E /* cloudCover_meteor_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_1.png; sourceTree = "<group>"; };
-		18D6A27F16ED893800B6755E /* cloudCover_meteor_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_2.png; sourceTree = "<group>"; };
-		18D6A28016ED893800B6755E /* cloudCover_meteor_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_3.png; sourceTree = "<group>"; };
-		18D6A28116ED893800B6755E /* cloudCover_meteor_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_4.png; sourceTree = "<group>"; };
-		18D6A28216ED893800B6755E /* cloudCover_meteor_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_5.png; sourceTree = "<group>"; };
-		18D6A28316ED893800B6755E /* cloudCover_meteor_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_6.png; sourceTree = "<group>"; };
-		18D6A28416ED893900B6755E /* cloudCover_meteor_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_7.png; sourceTree = "<group>"; };
-		18D6A28516ED893900B6755E /* cloudCover_meteor_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_8.png; sourceTree = "<group>"; };
-		18F78CFF16EDA98000471775 /* cloudCover_simple_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_1.png; sourceTree = "<group>"; };
-		18F78D0016EDA98000471775 /* cloudCover_simple_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_2.png; sourceTree = "<group>"; };
-		18F78D0116EDA98000471775 /* cloudCover_simple_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_3.png; sourceTree = "<group>"; };
-		18F78D0216EDA98000471775 /* cloudCover_simple_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_4.png; sourceTree = "<group>"; };
-		18F78D0316EDA98000471775 /* cloudCover_simple_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_5.png; sourceTree = "<group>"; };
-		18F78D0416EDA98000471775 /* cloudCover_simple_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_6.png; sourceTree = "<group>"; };
-		18F78D0516EDA98000471775 /* cloudCover_simple_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_7.png; sourceTree = "<group>"; };
-		18F78D0616EDA98000471775 /* cloudCover_simple_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_8.png; sourceTree = "<group>"; };
+		18F61AA8171BD5D7006832E1 /* cloudCover_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_bg.png; sourceTree = "<group>"; };
+		18F61AA9171BD5D7006832E1 /* cloudCover_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_bg@2x.png"; sourceTree = "<group>"; };
+		18F61AAA171BD5D7006832E1 /* cloudCover_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_circle.png; sourceTree = "<group>"; };
+		18F61AAB171BD5D7006832E1 /* cloudCover_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_circle@2x.png"; sourceTree = "<group>"; };
+		18F61AAC171BD5D7006832E1 /* cloudCover_meteor_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_1.png; sourceTree = "<group>"; };
+		18F61AAD171BD5D7006832E1 /* cloudCover_meteor_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_meteor_1@2x.png"; sourceTree = "<group>"; };
+		18F61AAE171BD5D7006832E1 /* cloudCover_meteor_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_2.png; sourceTree = "<group>"; };
+		18F61AAF171BD5D7006832E1 /* cloudCover_meteor_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_meteor_2@2x.png"; sourceTree = "<group>"; };
+		18F61AB0171BD5D7006832E1 /* cloudCover_meteor_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_3.png; sourceTree = "<group>"; };
+		18F61AB1171BD5D7006832E1 /* cloudCover_meteor_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_meteor_3@2x.png"; sourceTree = "<group>"; };
+		18F61AB2171BD5D7006832E1 /* cloudCover_meteor_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_4.png; sourceTree = "<group>"; };
+		18F61AB3171BD5D7006832E1 /* cloudCover_meteor_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_meteor_4@2x.png"; sourceTree = "<group>"; };
+		18F61AB4171BD5D7006832E1 /* cloudCover_meteor_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_5.png; sourceTree = "<group>"; };
+		18F61AB5171BD5D8006832E1 /* cloudCover_meteor_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_meteor_5@2x.png"; sourceTree = "<group>"; };
+		18F61AB6171BD5D8006832E1 /* cloudCover_meteor_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_6.png; sourceTree = "<group>"; };
+		18F61AB7171BD5D8006832E1 /* cloudCover_meteor_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_meteor_6@2x.png"; sourceTree = "<group>"; };
+		18F61AB8171BD5D8006832E1 /* cloudCover_meteor_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_7.png; sourceTree = "<group>"; };
+		18F61AB9171BD5D8006832E1 /* cloudCover_meteor_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_meteor_7@2x.png"; sourceTree = "<group>"; };
+		18F61ABA171BD5D8006832E1 /* cloudCover_meteor_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_meteor_8.png; sourceTree = "<group>"; };
+		18F61ABB171BD5D8006832E1 /* cloudCover_meteor_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_meteor_8@2x.png"; sourceTree = "<group>"; };
+		18F61ABC171BD5D8006832E1 /* cloudCover_simple_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_1.png; sourceTree = "<group>"; };
+		18F61ABD171BD5D8006832E1 /* cloudCover_simple_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_simple_1@2x.png"; sourceTree = "<group>"; };
+		18F61ABE171BD5D8006832E1 /* cloudCover_simple_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_2.png; sourceTree = "<group>"; };
+		18F61ABF171BD5D8006832E1 /* cloudCover_simple_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_simple_2@2x.png"; sourceTree = "<group>"; };
+		18F61AC0171BD5D8006832E1 /* cloudCover_simple_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_3.png; sourceTree = "<group>"; };
+		18F61AC1171BD5D8006832E1 /* cloudCover_simple_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_simple_3@2x.png"; sourceTree = "<group>"; };
+		18F61AC2171BD5D8006832E1 /* cloudCover_simple_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_4.png; sourceTree = "<group>"; };
+		18F61AC3171BD5D8006832E1 /* cloudCover_simple_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_simple_4@2x.png"; sourceTree = "<group>"; };
+		18F61AC4171BD5D8006832E1 /* cloudCover_simple_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_5.png; sourceTree = "<group>"; };
+		18F61AC5171BD5D8006832E1 /* cloudCover_simple_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_simple_5@2x.png"; sourceTree = "<group>"; };
+		18F61AC6171BD5D8006832E1 /* cloudCover_simple_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_6.png; sourceTree = "<group>"; };
+		18F61AC7171BD5D8006832E1 /* cloudCover_simple_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_simple_6@2x.png"; sourceTree = "<group>"; };
+		18F61AC8171BD5D8006832E1 /* cloudCover_simple_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_7.png; sourceTree = "<group>"; };
+		18F61AC9171BD5D8006832E1 /* cloudCover_simple_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_simple_7@2x.png"; sourceTree = "<group>"; };
+		18F61ACA171BD5D8006832E1 /* cloudCover_simple_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_simple_8.png; sourceTree = "<group>"; };
+		18F61ACB171BD5D8006832E1 /* cloudCover_simple_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_simple_8@2x.png"; sourceTree = "<group>"; };
+		18F61ACC171BD5D8006832E1 /* cloudCover_unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudCover_unknown.png; sourceTree = "<group>"; };
+		18F61ACD171BD5D8006832E1 /* cloudCover_unknown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudCover_unknown@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -508,25 +546,44 @@
 				18C14ABF16EC963E00492A45 /* CloudCoverLayer.m */,
 				18C14AA716EC960100492A45 /* CloudCover.h */,
 				18C14AA816EC960100492A45 /* CloudCover.m */,
-				18C14AAA16EC960900492A45 /* cloudCover_bg.png */,
-				18F78CFF16EDA98000471775 /* cloudCover_simple_1.png */,
-				18F78D0016EDA98000471775 /* cloudCover_simple_2.png */,
-				18F78D0116EDA98000471775 /* cloudCover_simple_3.png */,
-				18F78D0216EDA98000471775 /* cloudCover_simple_4.png */,
-				18F78D0316EDA98000471775 /* cloudCover_simple_5.png */,
-				18F78D0416EDA98000471775 /* cloudCover_simple_6.png */,
-				18F78D0516EDA98000471775 /* cloudCover_simple_7.png */,
-				18F78D0616EDA98000471775 /* cloudCover_simple_8.png */,
-				18D6A27E16ED893800B6755E /* cloudCover_meteor_1.png */,
-				18D6A27F16ED893800B6755E /* cloudCover_meteor_2.png */,
-				18D6A28016ED893800B6755E /* cloudCover_meteor_3.png */,
-				18D6A28116ED893800B6755E /* cloudCover_meteor_4.png */,
-				18D6A28216ED893800B6755E /* cloudCover_meteor_5.png */,
-				18D6A28316ED893800B6755E /* cloudCover_meteor_6.png */,
-				18D6A28416ED893900B6755E /* cloudCover_meteor_7.png */,
-				18D6A28516ED893900B6755E /* cloudCover_meteor_8.png */,
-				18D6A27C16ED7D3300B6755E /* cloudCover_unknown.png */,
-				18C14AAB16EC960900492A45 /* cloudCover_circle.png */,
+				18F61AA8171BD5D7006832E1 /* cloudCover_bg.png */,
+				18F61AA9171BD5D7006832E1 /* cloudCover_bg@2x.png */,
+				18F61AAA171BD5D7006832E1 /* cloudCover_circle.png */,
+				18F61AAB171BD5D7006832E1 /* cloudCover_circle@2x.png */,
+				18F61AAC171BD5D7006832E1 /* cloudCover_meteor_1.png */,
+				18F61AAD171BD5D7006832E1 /* cloudCover_meteor_1@2x.png */,
+				18F61AAE171BD5D7006832E1 /* cloudCover_meteor_2.png */,
+				18F61AAF171BD5D7006832E1 /* cloudCover_meteor_2@2x.png */,
+				18F61AB0171BD5D7006832E1 /* cloudCover_meteor_3.png */,
+				18F61AB1171BD5D7006832E1 /* cloudCover_meteor_3@2x.png */,
+				18F61AB2171BD5D7006832E1 /* cloudCover_meteor_4.png */,
+				18F61AB3171BD5D7006832E1 /* cloudCover_meteor_4@2x.png */,
+				18F61AB4171BD5D7006832E1 /* cloudCover_meteor_5.png */,
+				18F61AB5171BD5D8006832E1 /* cloudCover_meteor_5@2x.png */,
+				18F61AB6171BD5D8006832E1 /* cloudCover_meteor_6.png */,
+				18F61AB7171BD5D8006832E1 /* cloudCover_meteor_6@2x.png */,
+				18F61AB8171BD5D8006832E1 /* cloudCover_meteor_7.png */,
+				18F61AB9171BD5D8006832E1 /* cloudCover_meteor_7@2x.png */,
+				18F61ABA171BD5D8006832E1 /* cloudCover_meteor_8.png */,
+				18F61ABB171BD5D8006832E1 /* cloudCover_meteor_8@2x.png */,
+				18F61ABC171BD5D8006832E1 /* cloudCover_simple_1.png */,
+				18F61ABD171BD5D8006832E1 /* cloudCover_simple_1@2x.png */,
+				18F61ABE171BD5D8006832E1 /* cloudCover_simple_2.png */,
+				18F61ABF171BD5D8006832E1 /* cloudCover_simple_2@2x.png */,
+				18F61AC0171BD5D8006832E1 /* cloudCover_simple_3.png */,
+				18F61AC1171BD5D8006832E1 /* cloudCover_simple_3@2x.png */,
+				18F61AC2171BD5D8006832E1 /* cloudCover_simple_4.png */,
+				18F61AC3171BD5D8006832E1 /* cloudCover_simple_4@2x.png */,
+				18F61AC4171BD5D8006832E1 /* cloudCover_simple_5.png */,
+				18F61AC5171BD5D8006832E1 /* cloudCover_simple_5@2x.png */,
+				18F61AC6171BD5D8006832E1 /* cloudCover_simple_6.png */,
+				18F61AC7171BD5D8006832E1 /* cloudCover_simple_6@2x.png */,
+				18F61AC8171BD5D8006832E1 /* cloudCover_simple_7.png */,
+				18F61AC9171BD5D8006832E1 /* cloudCover_simple_7@2x.png */,
+				18F61ACA171BD5D8006832E1 /* cloudCover_simple_8.png */,
+				18F61ACB171BD5D8006832E1 /* cloudCover_simple_8@2x.png */,
+				18F61ACC171BD5D8006832E1 /* cloudCover_unknown.png */,
+				18F61ACD171BD5D8006832E1 /* cloudCover_unknown@2x.png */,
 				189688BA16EC916000C7634B /* Resources */,
 				189688D416EC916100C7634B /* libs */,
 				18968A2D16EC916700C7634B /* Supporting Files */,
@@ -960,26 +1017,45 @@
 				189688D016EC916100C7634B /* Icon@2x.png in Resources */,
 				189688D316EC916100C7634B /* iTunesArtwork in Resources */,
 				18968A1116EC916600C7634B /* ChangeLog in Resources */,
-				18C14AB416EC960900492A45 /* cloudCover_bg.png in Resources */,
-				18C14AB516EC960900492A45 /* cloudCover_circle.png in Resources */,
 				18C14AC216EC972100492A45 /* Default-568h@2x.png in Resources */,
-				18D6A27D16ED7D3300B6755E /* cloudCover_unknown.png in Resources */,
-				18D6A28616ED893900B6755E /* cloudCover_meteor_1.png in Resources */,
-				18D6A28716ED893900B6755E /* cloudCover_meteor_2.png in Resources */,
-				18D6A28816ED893900B6755E /* cloudCover_meteor_3.png in Resources */,
-				18D6A28916ED893900B6755E /* cloudCover_meteor_4.png in Resources */,
-				18D6A28A16ED893900B6755E /* cloudCover_meteor_5.png in Resources */,
-				18D6A28B16ED893900B6755E /* cloudCover_meteor_6.png in Resources */,
-				18D6A28C16ED893900B6755E /* cloudCover_meteor_7.png in Resources */,
-				18D6A28D16ED893900B6755E /* cloudCover_meteor_8.png in Resources */,
-				18F78D0716EDA98000471775 /* cloudCover_simple_1.png in Resources */,
-				18F78D0816EDA98000471775 /* cloudCover_simple_2.png in Resources */,
-				18F78D0916EDA98000471775 /* cloudCover_simple_3.png in Resources */,
-				18F78D0A16EDA98000471775 /* cloudCover_simple_4.png in Resources */,
-				18F78D0B16EDA98000471775 /* cloudCover_simple_5.png in Resources */,
-				18F78D0C16EDA98000471775 /* cloudCover_simple_6.png in Resources */,
-				18F78D0D16EDA98000471775 /* cloudCover_simple_7.png in Resources */,
-				18F78D0E16EDA98000471775 /* cloudCover_simple_8.png in Resources */,
+				18F61ACE171BD5D8006832E1 /* cloudCover_bg.png in Resources */,
+				18F61ACF171BD5D8006832E1 /* cloudCover_bg@2x.png in Resources */,
+				18F61AD0171BD5D8006832E1 /* cloudCover_circle.png in Resources */,
+				18F61AD1171BD5D8006832E1 /* cloudCover_circle@2x.png in Resources */,
+				18F61AD2171BD5D8006832E1 /* cloudCover_meteor_1.png in Resources */,
+				18F61AD3171BD5D8006832E1 /* cloudCover_meteor_1@2x.png in Resources */,
+				18F61AD4171BD5D8006832E1 /* cloudCover_meteor_2.png in Resources */,
+				18F61AD5171BD5D8006832E1 /* cloudCover_meteor_2@2x.png in Resources */,
+				18F61AD6171BD5D8006832E1 /* cloudCover_meteor_3.png in Resources */,
+				18F61AD7171BD5D8006832E1 /* cloudCover_meteor_3@2x.png in Resources */,
+				18F61AD8171BD5D8006832E1 /* cloudCover_meteor_4.png in Resources */,
+				18F61AD9171BD5D8006832E1 /* cloudCover_meteor_4@2x.png in Resources */,
+				18F61ADA171BD5D8006832E1 /* cloudCover_meteor_5.png in Resources */,
+				18F61ADB171BD5D8006832E1 /* cloudCover_meteor_5@2x.png in Resources */,
+				18F61ADC171BD5D8006832E1 /* cloudCover_meteor_6.png in Resources */,
+				18F61ADD171BD5D8006832E1 /* cloudCover_meteor_6@2x.png in Resources */,
+				18F61ADE171BD5D8006832E1 /* cloudCover_meteor_7.png in Resources */,
+				18F61ADF171BD5D8006832E1 /* cloudCover_meteor_7@2x.png in Resources */,
+				18F61AE0171BD5D8006832E1 /* cloudCover_meteor_8.png in Resources */,
+				18F61AE1171BD5D8006832E1 /* cloudCover_meteor_8@2x.png in Resources */,
+				18F61AE2171BD5D8006832E1 /* cloudCover_simple_1.png in Resources */,
+				18F61AE3171BD5D8006832E1 /* cloudCover_simple_1@2x.png in Resources */,
+				18F61AE4171BD5D8006832E1 /* cloudCover_simple_2.png in Resources */,
+				18F61AE5171BD5D8006832E1 /* cloudCover_simple_2@2x.png in Resources */,
+				18F61AE6171BD5D8006832E1 /* cloudCover_simple_3.png in Resources */,
+				18F61AE7171BD5D8006832E1 /* cloudCover_simple_3@2x.png in Resources */,
+				18F61AE8171BD5D8006832E1 /* cloudCover_simple_4.png in Resources */,
+				18F61AE9171BD5D8006832E1 /* cloudCover_simple_4@2x.png in Resources */,
+				18F61AEA171BD5D8006832E1 /* cloudCover_simple_5.png in Resources */,
+				18F61AEB171BD5D8006832E1 /* cloudCover_simple_5@2x.png in Resources */,
+				18F61AEC171BD5D8006832E1 /* cloudCover_simple_6.png in Resources */,
+				18F61AED171BD5D8006832E1 /* cloudCover_simple_6@2x.png in Resources */,
+				18F61AEE171BD5D8006832E1 /* cloudCover_simple_7.png in Resources */,
+				18F61AEF171BD5D8006832E1 /* cloudCover_simple_7@2x.png in Resources */,
+				18F61AF0171BD5D8006832E1 /* cloudCover_simple_8.png in Resources */,
+				18F61AF1171BD5D8006832E1 /* cloudCover_simple_8@2x.png in Resources */,
+				18F61AF2171BD5D8006832E1 /* cloudCover_unknown.png in Resources */,
+				18F61AF3171BD5D8006832E1 /* cloudCover_unknown@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
